@@ -25,6 +25,13 @@ class BinarySearchTest {
         assertTrue(binarySearcher.search(createSortedArray(), 1));
     }
 
+    @Test
+    void testSearchLastNumber() {
+        int[] numbers = createSortedArray();
+        assertTrue(binarySearcher.search(createSortedArray(), 50));
+    }
+
+
     private int[] createSortedArray() {
         int[] numbers = {1, 3, 8, 10, 12, 14, 20, 32, 50};
         return numbers;
