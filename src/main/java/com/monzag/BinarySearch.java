@@ -1,11 +1,13 @@
 package com.monzag;
 
+import java.util.Arrays;
+
 public class BinarySearch {
 
     public Boolean search(int[] numbers, int toFind) {
-        numbers = sort(numbers);
+        int[] sortedNumbers = sort(numbers);
         int startPoint = 0;
-        int endPoint = numbers.length - 1;
+        int endPoint = sortedNumbers.length - 1;
         Boolean notFound = true;
         while (notFound) {
             int middlePoint = (startPoint + endPoint) / 2;
@@ -13,10 +15,10 @@ public class BinarySearch {
             if (startPoint > endPoint) {
                 notFound = false;
 
-            } if (numbers[middlePoint] == toFind) {
+            } if (sortedNumbers[middlePoint] == toFind) {
                 return true;
 
-            } if (numbers[middlePoint] > toFind) {
+            } if (sortedNumbers[middlePoint] > toFind) {
                 endPoint = middlePoint - 1;
 
             } else {
@@ -24,5 +26,10 @@ public class BinarySearch {
             }
         }
         return notFound;
+    }
+
+    private int[] sort(int[] numbers) {
+        Arrays.sort(numbers);
+        return numbers;
     }
 }
