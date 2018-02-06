@@ -31,6 +31,12 @@ class BinarySearchTest {
         assertTrue(binarySearcher.search(createSortedArray(), 50));
     }
 
+    @Test
+    void testSearchMiddleNumber() {
+        int[] numbers = createSortedArray();
+        assertTrue(binarySearcher.search(createSortedArray(), 12));
+    }
+
 
     private int[] createSortedArray() {
         int[] numbers = {1, 3, 8, 10, 12, 14, 20, 32, 50};
