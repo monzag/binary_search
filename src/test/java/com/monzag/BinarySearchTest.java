@@ -49,6 +49,12 @@ class BinarySearchTest {
         assertTrue(binarySearcher.search(createNotSortedArray(), 8));
     }
 
+    @Test
+    void testSearchNegativeNumber() {
+        int[] numbers = {-3, -1, 3, 8, 12, 14, 16, 32, 50};
+        assertTrue(binarySearcher.search(numbers, -1));
+    }
+
     private int[] createSortedArray() {
         int[] numbers = {1, 3, 8, 10, 12, 14, 20, 32, 50};
         return numbers;
