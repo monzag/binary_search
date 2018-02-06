@@ -21,25 +21,21 @@ class BinarySearchTest {
 
     @Test
     void testSearchFirstNumber() {
-        int[] numbers = createSortedArray();
         assertTrue(binarySearcher.search(createSortedArray(), 1));
     }
 
     @Test
     void testSearchLastNumber() {
-        int[] numbers = createSortedArray();
         assertTrue(binarySearcher.search(createSortedArray(), 50));
     }
 
     @Test
     void testSearchMiddleNumber() {
-        int[] numbers = createSortedArray();
         assertTrue(binarySearcher.search(createSortedArray(), 12));
     }
 
     @Test
     void testSearchNumber() {
-        int[] numbers = createSortedArray();
         assertTrue(binarySearcher.search(createSortedArray(), 8));
     }
 
