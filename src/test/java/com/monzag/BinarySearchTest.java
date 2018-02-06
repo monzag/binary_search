@@ -52,7 +52,7 @@ class BinarySearchTest {
 
     @Test
     void testSearchNegativeNumber() {
-        int[] numbers = {-3, -1, 3, 8, 12, 14, 16, 32, 50};
+        int[] numbers = {-3, -1, 3, 8, 12, 14, 16, 32, 51};
         assertTrue(binarySearcher.search(numbers, -1));
     }
 
@@ -60,5 +60,4 @@ class BinarySearchTest {
         int[] numbers = {1, 3, 8, 10, 12, 14, 20, 32, 50};
         return numbers;
     }
-
 }
