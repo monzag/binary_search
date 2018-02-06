@@ -43,6 +43,11 @@ class BinarySearchTest {
         assertTrue(binarySearcher.search(createSortedArray(), 8));
     }
 
+    @Test
+    void testNotExistNumber() {
+        assertFalse(binarySearcher.search(createSortedArray(), 100));
+    }
+
 
     private int[] createSortedArray() {
         int[] numbers = {1, 3, 8, 10, 12, 14, 20, 32, 50};
