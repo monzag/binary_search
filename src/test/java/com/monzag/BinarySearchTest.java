@@ -19,6 +19,12 @@ class BinarySearchTest {
         BinarySearch searcher = new BinarySearch();
     }
 
+    @Test
+    void testSearchExistNumber() {
+        int[] numbers = createSortedArray();
+        assertTrue(binarySearcher.search(createSortedArray(), 1));
+    }
+
     private int[] createSortedArray() {
         int[] numbers = {1, 3, 8, 10, 12, 14, 20, 32, 50};
         return numbers;
