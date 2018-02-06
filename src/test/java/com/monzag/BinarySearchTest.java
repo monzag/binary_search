@@ -20,7 +20,7 @@ class BinarySearchTest {
     }
 
     @Test
-    void testSearchExistNumber() {
+    void testSearchFirstNumber() {
         int[] numbers = createSortedArray();
         assertTrue(binarySearcher.search(createSortedArray(), 1));
     }
