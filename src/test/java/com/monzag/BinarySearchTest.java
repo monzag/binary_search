@@ -11,6 +11,11 @@ class BinarySearchTest {
     void setup() {
         BinarySearch searcher = new BinarySearch();
     }
+    
+    @Test
+    void testConstructor() {
+        BinarySearch searcher = new BinarySearch();
+    }
 
 
 }
