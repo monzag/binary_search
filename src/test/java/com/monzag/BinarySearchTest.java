@@ -7,15 +7,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BinarySearchTest {
 
+    private BinarySearch binarySearcher;
+
     @BeforeEach
     void setup() {
-        BinarySearch searcher = new BinarySearch();
+        binarySearcher = new BinarySearch();
     }
-    
+
     @Test
     void testConstructor() {
         BinarySearch searcher = new BinarySearch();
     }
+
 
 
 }
