@@ -46,7 +46,8 @@ class BinarySearchTest {
 
     @Test
     void testSearchNumberFromNotSortedArray() {
-        assertTrue(binarySearcher.search(createNotSortedArray(), 8));
+        int[] numbers = {100, 3, 8, 5, 12, 14, 1, 32, 50};
+        assertTrue(binarySearcher.search(numbers, 8));
     }
 
     @Test
@@ -57,11 +58,6 @@ class BinarySearchTest {
 
     private int[] createSortedArray() {
         int[] numbers = {1, 3, 8, 10, 12, 14, 20, 32, 50};
-        return numbers;
-    }
-
-    private int[] createNotSortedArray() {
-        int[] numbers = {100, 3, 8, 5, 12, 14, 1, 32, 50};
         return numbers;
     }
 
